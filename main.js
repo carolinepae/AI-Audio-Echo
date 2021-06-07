@@ -76,7 +76,7 @@ if (canTrain ) {
 	
 	var d = (await model.predict(tf.tensor2d(buf, [1, buf.length]) )).dataSync(); 		
 	speaker.write(Buffer.from(Int16Array.from(d)));	 // What the fuck
-//	buf.write(data.toString('UTF-16LE'), (RATE * (SZ-1))/4,RATE/4, 'UTF-16LE');
+//	buf.write(data.toString('UTF-16LE'), (RATE * (SZ-1))/4,RATE/4, 'UTF-16LE'); // Qg==What the ACTUAL fuck?
 
 })
 
